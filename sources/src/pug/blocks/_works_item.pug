@@ -1,0 +1,8 @@
+mixin works_item(imageUrl, description, usedTechnologies, demoLink, sourceLink)
+    .works__item
+        .works__portfolio
+            img(src=imageUrl alt="portfolio preview")
+            a(href=demoLink target="_blank")
+        p.works__description= description
+        p.works__tech= "Used technologies - " + usedTechnologies
+        a.works__source(href=sourceLink target="_blank") sorce code #[img.external__link(src="./images/link.svg" alt="")]

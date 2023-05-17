@@ -101,4 +101,59 @@ block page
             .block__right
                 .block__name Electrician
 
+    section.works#examples
+        .container
+            h2.works__title.title Work Examples
+            p.works__text Examples of my work:
+
+            .works__wrapper
+
+                -
+                    const worksExamples = [
+                        {
+                            imageUrl: "./images/talent.jpg",
+                            description: 'Website for recruiting company',
+                            usedTechnologies: 'Pug, SCSS, JS, GSAP, jQuery',
+                            demoLink: "https://irrbis38.github.io/talent/",
+                            sourceLink: "https://github.com/irrbis38/talent"
+                        },
+                        {
+                            imageUrl: "./images/apostol.jpg",
+                            description: 'Website for media awards',
+                            usedTechnologies: 'Pug, SCSS, JavaScript, GSAP',
+                            demoLink: "https://irrbis38.github.io/apostol-done/",
+                            sourceLink: "https://github.com/irrbis38/apostol-done"
+                        },
+                        {
+                            imageUrl: "./images/Bella.jpg",
+                            description: 'Studying project usage Greensock library',
+                            usedTechnologies: 'HTML, SCSS, JavaScript, GSAP',
+                            demoLink: "https://irrbis38.github.io/GS-bella/",
+                            sourceLink: "https://github.com/irrbis38/GS-bella"
+                        },
+                        {
+                            imageUrl: "./images/buhtech.jpg",
+                            description: 'Responsive coding from figma to html of accounting company website, landing to CMS Wordpress',
+                            usedTechnologies: 'HTML, CSS, JavaScript, Wordpress',
+                            demoLink: "https://irrbis38.github.io/BuhTechnologies/",
+                            sourceLink: "https"
+                        },
+                        {
+                            imageUrl: "./images/chysto.jpg",
+                            description: 'Responsive coding from figma to html of cleaning company site, landing to CMS Wordpress',
+                            usedTechnologies: 'HTML, CSS, JavaScript, jQuery, Wordpress',
+                            demoLink: "https://irrbis38.github.io/https-chysto.by-/",
+                            sourceLink: "https://github.com/irrbis38/https-chysto.by-"
+                        },
+                        {
+                            imageUrl: "./images/lawtech.jpg",
+                            description: 'Responsive coding from figma to html of law company site, landing to CMS Wordpress',
+                            usedTechnologies: 'HTML, CSS, JavaScript, jQuery, Wordpress',
+                            demoLink: "https://irrbis38.github.io/testWebFocus/",
+                            sourceLink: "https://github.com/irrbis38/testWebFocus"
+                        },
+                    ];
+
+                each work in worksExamples
+                    +works_item(work.imageUrl, work.description, work.usedTechnologies, work.demoLink, work.sourceLink)
 
