@@ -1,2 +1,78 @@
-header.header
-    .container Header
+header.header#top
+    .container
+        .header__burger
+            span
+
+        .burger__bg
+
+        .toTop#toTop
+            img(src="./images/up-arrow.svg" alt="")
+
+        .burger__nav
+            a.burger__link(href="#about") About
+            a.burger__link(href="#experience") Work Experience
+            a.burger__link.skills-and-tools(href="#skills") Skills & Tools
+            a.burger__link(href="#education") Education
+            a.burger__link(href="#examples") Work Examples
+
+        .header__image
+            +picture('my-photo', 'jpg', 'x2')
+
+        .header__wrapper
+            h1.header__name Vasil Iliukhin
+            h2.header__profession Frontend Developer
+
+            .header__picture
+                +picture('my-photo', 'jpg', 'x2')
+
+            .header__info
+                ul.header__contacts
+
+                    li.header__item
+                        h4.header__title Email
+                        p
+                            a.header__link(href="mailto:v.ilyuhin@gmail.com") v.ilyuhin@gmail.com
+
+                    li.header__item
+                        h4.header__title Phone
+                        p
+                            a.header__link(href="tel:+375447219716") +375(44) 721-97-16
+
+                    li.header__item
+                        h4.header__title Telegram
+                        p
+                            a.header__link(href="https://telegram.me/irrbis38" target="_blank") irrbis38
+
+                    li.header__item
+                        h4.header__title Links
+                        p
+                            a.header__link(href="https://github.com/irrbis38" target="_blank") GitHub
+                            img.external__link(src="./images/link.svg" alt="")
+                        p
+                            a.header__link(href="https://www.linkedin.com/in/irrbis38/" target="_blank") LinkedIn
+                            img.external__link(src="./images/link.svg" alt="")
+
+                .header__skills
+                    h4.header__title Technical Skills
+                    ul
+                        li.header__item HTML5, Pug (Jade)
+                        li.header__item CSS3, SCSS
+                        li.header__item JavaScript
+                        li.header__item GSAP
+                        li.header__item BEM
+                        li.header__item Gulp
+                        li.header__item Wordpress
+
+                    .header__english
+                        h4.header__title English Level
+                        ul
+                            li.header__item B1 Low Intermediate
+
+                .header__tools
+                    h4.header__title Tools
+                    ul
+                        li.header__item VS Code
+                        li.header__item GitHub
+                        li.header__item Figma
+                        li.header__item Adobe Photoshop
+                        li.header__item Wordpress
