@@ -431,7 +431,7 @@ body.lock {
   transform: translateY(10%);
   transition: all 0.2s ease-out;
 
-  .works__portfolio:hover & {
+  .works__item:hover & {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
@@ -446,7 +446,7 @@ body.lock {
   max-height: 0;
   transition: all 0.2s ease-out;
 
-  .works__portfolio:hover & {
+  .works__item:hover & {
     visibility: visible;
     max-height: 100%;
   }
@@ -495,7 +495,7 @@ body.lock {
   transform: translateY(10%);
   transition: all 0.2s ease-out;
 
-  .works__portfolio:hover & {
+  .works__item:hover & {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
