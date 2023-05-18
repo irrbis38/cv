@@ -1168,7 +1168,7 @@ body.lock {
   transform: translateY(10%);
   transition: all .2s ease-out
 }
-.works__portfolio:hover .works__about {
+.works__item:hover .works__about {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -1182,7 +1182,7 @@ body.lock {
   max-height: 0;
   transition: all .2s ease-out
 }
-.works__portfolio:hover .works__line {
+.works__item:hover .works__line {
   visibility: visible;
   max-height: 100%
 }
@@ -1230,7 +1230,7 @@ body.lock {
   transform: translateY(10%);
   transition: all .2s ease-out
 }
-.works__portfolio:hover .works__links {
+.works__item:hover .works__links {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translateY(0);
