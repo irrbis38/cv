@@ -2,3 +2,158 @@ extends base/_layout
 block head
     title Vasil Iliukhin - Curriculum Vitae
 block page
+
+    section.about
+        .container
+            h2.about__title.title#about About
+            p.about__text.
+                I’m 39 years old. Married. I have two kids. Live in Bobruisk, Belarus.#[br]
+                Start web-development in 2020. Web-developer with technical education.#[br]
+                Stack: Pug, SCSS, JS, GSAP
+
+    section.experience.block#experience
+        .container
+            h2.block__title.title Work Experience
+
+            .block__item
+                .block__left
+                    p.block__subtitle LiveHTML
+                    p.block__additional Oct 2022 - Present
+                    p.block__additional Minsk, Belarus
+
+                .block__right
+                    p.block__name Web-developer
+                    p.block__about Create different websites usage Pug, SCSS, JavaScript, GSAP.
+
+            .block__item
+                .block__left
+                    p.block__subtitle CreativeSolutions
+                    p.block__additional Dec 2021 - Oct 2022
+                    p.block__additional Bobruisk, Belarus
+
+                .block__right
+                    p.block__name Web-developer
+                    p.block__about Created websites of varying degrees of complexity. Stack: HTML, SCSS, JS.
+
+            .block__item
+                .block__left
+                    p.block__subtitle Webfocus
+                    p.block__additional Oct 2020 - Dec 2021
+                    p.block__additional Bobruisk, Belarus
+
+                .block__right
+                    p.block__name Web-developer
+                    p.block__about Create different sites (HTML/CSS/JS), add interactive elements, integrated the code to CMS Wordpress.
+
+    section.skills.block#skills
+        .container
+            h2.block__title.title Skills & Tools
+
+            .block__item
+            .block__right
+                p.block__name Technical Skills
+                ul.block__list
+                    li HTML5, Pug (Jade)
+                    li CSS3, SCSS
+                    li JavaScript
+                    li GSAP
+                    li BEM
+                    li Wordpress
+
+            .block__item
+            .block__right
+                p.block__name English Level
+                ul.block__list
+                    li B1 Low Intermediate
+
+            .block__item
+            .block__right
+                p.block__name Tools
+                ul.block__list
+                    li VS Code
+                    li GitHub
+                    li Figma
+                    li Adobe Photoshop
+                    li Gulp
+
+    section.education.block#education
+    .container
+        h2.block__title.title Education
+
+        .block__item
+            .block__left
+                p.block__subtitle RS School
+                p.block__additional March 2021 - Sept 2021
+            .block__right
+                .block__name JavaScript / Frontend
+
+        .block__item
+            .block__left
+                p.block__subtitle BSUIR
+                p.block__additional 2004 - 2010
+            .block__right
+                .block__name Technical Security
+
+        .block__item
+            .block__left
+                p.block__subtitle Bobruisk State Electrotechnical College
+                p.block__additional 2001 - 2002
+            .block__right
+                .block__name Electrician
+
+    section.works#examples
+        .container
+            h2.works__title.title Work Examples
+            p.works__text Examples of my work:
+
+            .works__wrapper
+
+                -
+                    const worksExamples = [
+                        {
+                            imageUrl: "./images/talent.jpg",
+                            description: 'Website for recruiting company',
+                            usedTechnologies: 'Pug, SCSS, JS, GSAP, jQuery',
+                            demoLink: "https://irrbis38.github.io/talent/",
+                            sourceLink: "https://github.com/irrbis38/talent"
+                        },
+                        {
+                            imageUrl: "./images/apostol.jpg",
+                            description: 'Website for media awards',
+                            usedTechnologies: 'Pug, SCSS, JavaScript, GSAP',
+                            demoLink: "https://irrbis38.github.io/apostol-done/",
+                            sourceLink: "https://github.com/irrbis38/apostol-done"
+                        },
+                        {
+                            imageUrl: "./images/Bella.jpg",
+                            description: 'Studying project usage Greensock library',
+                            usedTechnologies: 'HTML, SCSS, JavaScript, GSAP',
+                            demoLink: "https://irrbis38.github.io/GS-bella/",
+                            sourceLink: "https://github.com/irrbis38/GS-bella"
+                        },
+                        {
+                            imageUrl: "./images/buhtech.jpg",
+                            description: 'Responsive coding from figma to html of accounting company website, landing to CMS Wordpress',
+                            usedTechnologies: 'HTML, CSS, JavaScript, Wordpress',
+                            demoLink: "https://irrbis38.github.io/BuhTechnologies/",
+                            sourceLink: "https"
+                        },
+                        {
+                            imageUrl: "./images/chysto.jpg",
+                            description: 'Responsive coding from figma to html of cleaning company site, landing to CMS Wordpress',
+                            usedTechnologies: 'HTML, CSS, JavaScript, jQuery, Wordpress',
+                            demoLink: "https://irrbis38.github.io/https-chysto.by-/",
+                            sourceLink: "https://github.com/irrbis38/https-chysto.by-"
+                        },
+                        {
+                            imageUrl: "./images/lawtech.jpg",
+                            description: 'Responsive coding from figma to html of law company site, landing to CMS Wordpress',
+                            usedTechnologies: 'HTML, CSS, JavaScript, jQuery, Wordpress',
+                            demoLink: "https://irrbis38.github.io/testWebFocus/",
+                            sourceLink: "https://github.com/irrbis38/testWebFocus"
+                        },
+                    ];
+
+                each work in worksExamples
+                    +works_item(work.imageUrl, work.description, work.usedTechnologies, work.demoLink, work.sourceLink)
+
