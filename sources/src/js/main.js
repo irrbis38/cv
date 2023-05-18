@@ -64,4 +64,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
     // window.scrollBy(0, -window.innerHeight);
   });
+
+  // html / css slider
+  const htmlWorksSlider = new Swiper(".works__slider", {
+    loop: false,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    pagination: {
+      el: ".works__nav",
+      type: "bullets",
+      bulletClass: "works__dot",
+      bulletActiveClass: "works__dot-active",
+      clickable: "true",
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      // whe
+      992: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+    },
+  });
 });
