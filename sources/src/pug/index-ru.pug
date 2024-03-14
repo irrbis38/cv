@@ -1,69 +1,69 @@
 extends base/_layout
 block head
-    title Vasil Iliukhin - Curriculum Vitae
+    title Василий Илюхин - Резюме
 block page
 
     section.about
         .container
-            h2.about__title.title#about About
+            h2.about__title.title#about Обо мне
             p.about__text.
-                I’m 40 years old. Married. I have two kids. Live in Bobruisk, Belarus.#[br]
-                Start web-development in 2020. Frontend-developer with technical education.#[br]
-                Main (commercial) stack: Pug, SCSS, JS, GSAP.#[br]
-                Non-commercial stack (educational and pet projects only): React, RTK, Module SCSS, Styled Components.
+                Мне 40 лет. Женат. Есть двое детей. Живу в Бобруйске, Беларусь.#[br]
+                Коммерческий опыт работы: с октября 2020 года. Frontend-разработчик с техническим образованием.#[br]
+                Основной стек (коммерческая разработка): Pug, SCSS, JS, GSAP.#[br]
+                Не коммерческий стек (выполнял лишь обучающие и пет проекты): React, RTK, Module SCSS, Styled Components.
 
 
     section.experience.block#experience
         .container
-            h2.block__title.title Work Experience
+            h2.block__title.title Опыт работы
 
             .block__item
                 .block__left
                     p.block__subtitle PHPDev
-                    p.block__additional Oct 2023 - Present
-                    p.block__additional Minsk, Belarus
+                    p.block__additional Октябрь 2023 - по настоящее время
+                    p.block__additional Минск, Беларусь
 
                 .block__right
-                    p.block__name Frontend-developer
-                    p.block__about Create different websites usage Pug, SCSS, JavaScript, GSAP.
+                    p.block__name Frontend-разработчик
+                    p.block__about Создание различных веб-сайтов Pug, SCSS, JavaScript, GSAP. Поддержка старых проектов.
 
             .block__item
                 .block__left
                     p.block__subtitle LiveHTML
-                    p.block__additional Oct 2022 - Sep 2023
-                    p.block__additional Minsk, Belarus
+                    p.block__additional Октябрь 2022 - Сентябрь 2023
+                    p.block__additional Минск, Беларусь
 
                 .block__right
-                    p.block__name Frontend-developer
-                    p.block__about Create different websites usage Pug, SCSS, JavaScript, GSAP.
+                    p.block__name Frontend-разработчик
+                    p.block__about Создание различных веб-сайтов Pug, SCSS, JavaScript, GSAP. Поддержка и редизайн старых проектов.
 
             .block__item
                 .block__left
                     p.block__subtitle CreativeSolutions
-                    p.block__additional Dec 2021 - Oct 2022
-                    p.block__additional Bobruisk, Belarus
+                    p.block__additional Декабрь 2021 - Октябрь 2022
+                    p.block__additional Минск, Беларусь
 
                 .block__right
-                    p.block__name Frontend-developer
-                    p.block__about Created websites of varying degrees of complexity. Stack: HTML, SCSS, JS.
+                    p.block__name Frontend-разработчик
+                    p.block__about Создание сайтов различной степени сложости. Стек: HTML, SCSS, JS.
 
             .block__item
                 .block__left
                     p.block__subtitle Webfocus
-                    p.block__additional Oct 2020 - Dec 2021
-                    p.block__additional Bobruisk, Belarus
+                    p.block__additional Октябрь 2020 - Декабрь 2021
+                    p.block__additional Минск, Беларусь
 
                 .block__right
-                    p.block__name Frontend-developer
-                    p.block__about Create different sites (HTML/CSS/JS), add interactive elements, integrated the code to CMS Wordpress.
+                    p.block__name Frontend-разработчик
+                    p.block__about Создание различных сайтов (HTML/CSS/JS), добавление интерактивных элементов, интеграция готовой вёрстки на CMS Wordpress.
 
     section.skills.block#skills
         .container
-            h2.block__title.title Skills & Tools
+            h2.block__title.title Навыки и инструменты
 
             .block__item
             .block__right
-                p.block__name Technical Skills
+                p.block__name Технические навыки
                 ul.block__list
                     li HTML5, Pug (Jade)
                     li Nunjucks
@@ -75,13 +75,13 @@ block page
 
             .block__item
             .block__right
-                p.block__name English Level
+                p.block__name Уровень английского
                 ul.block__list
-                    li B1 Low Intermediate
+                    li B1 (промежуточный)
 
             .block__item
             .block__right
-                p.block__name Tools
+                p.block__name Инструменты
                 ul.block__list
                     li VS Code
                     li GitHub
@@ -93,32 +93,32 @@ block page
 
     section.education.block#education
         .container
-            h2.block__title.title Education
+            h2.block__title.title Образование
 
             .block__item
                 .block__left
                     p.block__subtitle RS School
-                    p.block__additional March 2021 - Sept 2021
+                    p.block__additional Март 2021 - Сентябрь 2021
                 .block__right
                     .block__name JavaScript / Frontend
 
             .block__item
                 .block__left
-                    p.block__subtitle BSUIR
+                    p.block__subtitle БГУИР
                     p.block__additional 2004 - 2010
                 .block__right
-                    .block__name Technical Security
+                    .block__name Техническое обеспечение безопасности
 
             .block__item
                 .block__left
-                    p.block__subtitle Bobruisk State Electrotechnical College
+                    p.block__subtitle Бобруйское государственное училище им. А.И.Черныша
                     p.block__additional 2001 - 2002
                 .block__right
-                    .block__name Electrician
+                    .block__name Электромонтёр
 
     section.works#examples
         .container
-            h2.works__title.title Work Examples ( Main / Commercial Stack) 
+            h2.works__title.title Примеры работ ( Основной / Коммерческий стек) 
 
             .works__slider.swiper
 
@@ -129,77 +129,77 @@ block page
 
                             {
                                 imageUrl: "./images/kuban_bread.jpg",
-                                description: 'Developed a responsive website for a company making delicious and healthy breads.',
+                                description: 'Разработка адаптивного сайта для компании, производящей вкусные и полезные хлебцы.',
                                 usedTechnologies: ['Pug', 'SCSS', 'JS'],
                                 demoLink: "https://irrbis38.github.io/kuban_bread/done/index.html",
                                 sourceLink: "https://github.com/irrbis38/kuban_bread"
                             },
                             {
                                 imageUrl: "./images/rrbeauty.jpg",
-                                description: 'Developed a responsive website for a store selling tattoo accessories.',
+                                description: 'Разработка адаптивного сайта для компании, продающей тату акссесуары.',
                                 usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP'],
                                 demoLink: "https://irrbis38.github.io/rrbeauty/",
                                 sourceLink: "https://github.com/irrbis38/rrbeauty"
                             },
                             {
                                 imageUrl: "./images/bauarenda.jpg",
-                                description: 'Development of an adaptive website for a company engaged in rental of construction equipment.',
+                                description: 'Разработка адаптивного сайта для компании, занимающейся предоставлением строительной техники в аренду.',
                                 usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP', 'Wordpress'],
                                 demoLink: "https://irrbis38.github.io/bau-arenda/",
                                 sourceLink: "https://github.com/irrbis38/bau-arenda"
                             },
                             {
                                 imageUrl: "./images/investment.jpg",
-                                description: 'Creating a website for an investment company.',
+                                description: 'Разработка адаптивного сайта для инвестиционной компании.',
                                 usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP'],
                                 demoLink: "https://irrbis38.github.io/investment/",
                                 sourceLink: "https://github.com/irrbis38/investment"
                             },
                             {
                                 imageUrl: "./images/talent.jpg",
-                                description: 'Website for recruiting company.',
+                                description: 'Редизайн сайта для рекрутинговой компании.',
                                 usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP', 'jQuery'],
                                 demoLink: "https://irrbis38.github.io/unity/",
                                 sourceLink: "https://github.com/irrbis38/unity"
                             },
                             {
                                 imageUrl: "./images/apostol.jpg",
-                                description: 'Website for media awards.',
+                                description: 'Сайт медиа-премии.',
                                 usedTechnologies: ['Pug', 'SCSS', 'JavaScript', 'GSAP'],
                                 demoLink: "https://irrbis38.github.io/apostol-done/",
                                 sourceLink: "https://github.com/irrbis38/apostol-done"
                             },
                             {
                                 imageUrl: "./images/Bella.jpg",
-                                description: 'Studying project usage Greensock library.',
+                                description: 'Обучающий проект по изучение библиотеки GreenSock.',
                                 usedTechnologies: ['HTML', 'SCSS', 'JavaScript', 'GSAP'],
                                 demoLink: "https://irrbis38.github.io/GS-bella/",
                                 sourceLink: "https://github.com/irrbis38/GS-bella"
                             },
                             {
                                 imageUrl: "./images/ancros.jpg",
-                                description: 'Test porject for Ancros company.',
+                                description: 'Тестовый проект для компании Анкрос.',
                                 usedTechnologies: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
                                 demoLink: "https://irrbis38.github.io/ancros-test/",
                                 sourceLink: "https://github.com/irrbis38/ancros-test"
                             },
                             {
                                 imageUrl: "./images/buhtech.jpg",
-                                description: 'Creating an adaptive website for an accounting company, integration on Wordpress.',
+                                description: 'Разработка адаптивного сайта для бухгалтерской компании, интеграция на CMS Wordpress.',
                                 usedTechnologies: ['HTML', 'CSS', 'JavaScript', 'Wordpress'],
                                 demoLink: "https://irrbis38.github.io/BuhTechnologies/",
                                 sourceLink: "https://github.com/irrbis38/BuhTechnologies"
                             },
                             {
                                 imageUrl: "./images/chysto.jpg",
-                                description: 'Create cleaning company site, integration on CMS Wordpress.',
+                                description: 'Разработка адаптивного сайта для клининговой компании, интеграция на CMS Wordpress.',
                                 usedTechnologies: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Wordpress'],
                                 demoLink: "https://irrbis38.github.io/https-chysto.by-/",
                                 sourceLink: "https://github.com/irrbis38/https-chysto.by-"
                             },
                             {
                                 imageUrl: "./images/lawtech.jpg",
-                                description: 'Adaptive website makeup for a law firm, integration on Wordpress.',
+                                description: 'Разработка адаптивного сайта для юридической компании, интеграция на CMS Wordpress.',
                                 usedTechnologies: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Wordpress'],
                                 demoLink: "https://irrbis38.github.io/testWebFocus/",
                                 sourceLink: "https://github.com/irrbis38/testWebFocus"
@@ -219,49 +219,49 @@ block page
 
                             {
                                 imageUrl: "./images/crwn-store-v2.jpg",
-                                description: 'Online Store',
+                                description: 'Онлайн магазин',
                                 usedTechnologies: ['React', 'React-router-DOM v.6', 'Styled-components', 'Firebase'],
                                 demoLink: "https://irrbis38.github.io/crwn-store-v2/",
                                 sourceLink: "https://github.com/irrbis38/crwn-store-v2"
                             },
                             {
                                 imageUrl: "./images/pizza.jpg",
-                                description: 'Pizza Store',
+                                description: 'Онлайн магазин пиццы',
                                 usedTechnologies: ['React', 'Redux Toolkit', 'Module SCSS'],
                                 demoLink: "https://irrbis38.github.io/pizza/",
                                 sourceLink: "https://github.com/irrbis38/pizza"
                             },
                             {
                                 imageUrl: "./images/lit-todolist.jpg",
-                                description: 'TodoApp',
+                                description: 'Список задач',
                                 usedTechnologies: ['React', 'Module SCSS', 'Zustand'],
                                 demoLink: "https://irrbis38.github.io/lit-todolist/",
                                 sourceLink: "https://github.com/irrbis38/lit-todolist"
                             },
                             {
                                 imageUrl: "./images/r-music-player.jpg",
-                                description: 'Music Player',
+                                description: 'Музыкальный плейер',
                                 usedTechnologies: ['React'],
                                 demoLink: "https://irrbis38.github.io/r-music-player/",
                                 sourceLink: "https://github.com/irrbis38/r-music-player"
                             },
                             {
                                 imageUrl: "./images/react-online-store.jpg",
-                                description: 'Simple React Online Shop',
+                                description: 'Простой онлайн магазин',
                                 usedTechnologies: ['React'],
                                 demoLink: "https://irrbis38.github.io/react-online-store",
                                 sourceLink: "https://github.com/irrbis38/react-online-store"
                             },
                             {
                                 imageUrl: "./images/countries.jpg",
-                                description: 'Countries Flags',
+                                description: 'Приложение - Флаги стран мира',
                                 usedTechnologies: ['React', 'Redux ToolKit', 'Styled-components'],
                                 demoLink: "https://irrbis38.github.io/countries/",
                                 sourceLink: "https://github.com/irrbis38/countries"
                             },
                             {
                                 imageUrl: "./images/react-movies.jpg",
-                                description: 'React Movies App',
+                                description: 'Приложение по поиску фильмов.',
                                 usedTechnologies: ['React'],
                                 demoLink: "https://irrbis38.github.io/react-movies/",
                                 sourceLink: "https://github.com/irrbis38/react-movies"
@@ -272,7 +272,7 @@ block page
 
     section.works
         .container
-            h2.works__title.title React Work Examples ( Non-Commercial Stack) 
+            h2.works__title.title Примеры работ (React) 
 
             .works__slider.swiper
 
