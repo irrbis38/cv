@@ -13,7 +13,7 @@ import "./gulp_tasks/scripts.js";
 import "./gulp_tasks/serve.js";
 import "./gulp_tasks/sprite.js";
 import "./gulp_tasks/styles.js";
-import "./gulp_tasks/w3c_validator.js";
+// import "./gulp_tasks/w3c_validator.js";
 import "./gulp_tasks/watcher.js";
 
 import { createRequire } from "module";

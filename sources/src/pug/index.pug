@@ -7,9 +7,11 @@ block page
         .container
             h2.about__title.title#about About
             p.about__text.
-                I’m 39 years old. Married. I have two kids. Live in Bobruisk, Belarus.#[br]
+                I’m 40 years old. Married. I have two kids. Live in Bobruisk, Belarus.#[br]
                 Start web-development in 2020. Web-developer with technical education.#[br]
-                Stack: Pug, SCSS, JS, GSAP
+                Main (commercial) stack: Pug, SCSS, JS, GSAP.#[br]
+                Non-commercial projects (educational and home-based projects only): React, RTK, Module SCSS, Styled Components.
+
 
     section.experience.block#experience
         .container
@@ -17,12 +19,22 @@ block page
 
             .block__item
                 .block__left
-                    p.block__subtitle LiveHTML
-                    p.block__additional Oct 2022 - Present
+                    p.block__subtitle PHPDev
+                    p.block__additional Oct 2023 - Present
                     p.block__additional Minsk, Belarus
 
                 .block__right
-                    p.block__name Web-developer
+                    p.block__name Frontend-developer
+                    p.block__about Create different websites usage Pug, SCSS, JavaScript, GSAP.
+
+            .block__item
+                .block__left
+                    p.block__subtitle LiveHTML
+                    p.block__additional Oct 2022 - Sep 2023
+                    p.block__additional Minsk, Belarus
+
+                .block__right
+                    p.block__name Frontend-developer
                     p.block__about Create different websites usage Pug, SCSS, JavaScript, GSAP.
 
             .block__item
@@ -32,7 +44,7 @@ block page
                     p.block__additional Bobruisk, Belarus
 
                 .block__right
-                    p.block__name Web-developer
+                    p.block__name Frontend-developer
                     p.block__about Created websites of varying degrees of complexity. Stack: HTML, SCSS, JS.
 
             .block__item
@@ -42,7 +54,7 @@ block page
                     p.block__additional Bobruisk, Belarus
 
                 .block__right
-                    p.block__name Web-developer
+                    p.block__name Frontend-developer
                     p.block__about Create different sites (HTML/CSS/JS), add interactive elements, integrated the code to CMS Wordpress.
 
     section.skills.block#skills
@@ -54,11 +66,12 @@ block page
                 p.block__name Technical Skills
                 ul.block__list
                     li HTML5, Pug (Jade)
+                    li Nunjucks
                     li CSS3, SCSS
                     li JavaScript
                     li GSAP
                     li BEM
-                    li Wordpress
+                    li React
 
             .block__item
             .block__right
@@ -75,6 +88,8 @@ block page
                     li Figma
                     li Adobe Photoshop
                     li Gulp
+                    li Webpack
+                    li Vite
 
     section.education.block#education
         .container
@@ -103,7 +118,7 @@ block page
 
     section.works#examples
         .container
-            h2.works__title.title Work Examples
+            h2.works__title.title Work Examples ( Main / Commercial Stack) 
 
             .works__slider.swiper
 
@@ -198,4 +213,79 @@ block page
                     .works__dot
                     .works__dot
                     .works__dot
+
+                    -
+                        const reactWorksExamples = [
+
+                            {
+                                imageUrl: "./images/crwn-store-v2.jpg",
+                                description: 'Online Store',
+                                usedTechnologies: ['React', 'React-router-DOM v.6', 'Styled-components', 'Firebase'],
+                                demoLink: "https://irrbis38.github.io/crwn-store-v2/",
+                                sourceLink: "https://github.com/irrbis38/crwn-store-v2"
+                            },
+                            {
+                                imageUrl: "./images/pizza.jpg",
+                                description: 'Pizza Store',
+                                usedTechnologies: ['React', 'Redux Toolkit', 'Module SCSS'],
+                                demoLink: "https://irrbis38.github.io/pizza/",
+                                sourceLink: "https://github.com/irrbis38/pizza"
+                            },
+                            {
+                                imageUrl: "./images/lit-todolist.jpg",
+                                description: 'TodoApp',
+                                usedTechnologies: ['React', 'Module SCSS', 'Zustand'],
+                                demoLink: "https://irrbis38.github.io/lit-todolist/",
+                                sourceLink: "https://github.com/irrbis38/lit-todolist"
+                            },
+                            {
+                                imageUrl: "./images/r-music-player.jpg",
+                                description: 'Music Player',
+                                usedTechnologies: ['React'],
+                                demoLink: "https://irrbis38.github.io/r-music-player/",
+                                sourceLink: "https://github.com/irrbis38/r-music-player"
+                            },
+                            {
+                                imageUrl: "./images/react-online-store.jpg",
+                                description: 'Simple React Online Shop',
+                                usedTechnologies: ['React'],
+                                demoLink: "https://irrbis38.github.io/react-online-store",
+                                sourceLink: "https://github.com/irrbis38/react-online-store"
+                            },
+                            {
+                                imageUrl: "./images/countries.jpg",
+                                description: 'Countries Flags',
+                                usedTechnologies: ['React', 'Redux ToolKit', 'Styled-components'],
+                                demoLink: "https://irrbis38.github.io/countries/",
+                                sourceLink: "https://github.com/irrbis38/countries"
+                            },
+                            {
+                                imageUrl: "./images/react-movies.jpg",
+                                description: 'React Movies App',
+                                usedTechnologies: ['React'],
+                                demoLink: "https://irrbis38.github.io/react-movies/",
+                                sourceLink: "https://github.com/irrbis38/react-movies"
+                            }
+                        ]
+
+
+
+    section.works#examples
+        .container
+            h2.works__title.title React Work Examples ( Non-Commercial Stack) 
+
+            .works__slider.swiper
+
+                .works__wrapper.swiper-wrapper
+
+
+                    each work in reactWorksExamples
+                        +works_item(work.imageUrl, work.description, work.usedTechnologies, work.demoLink, work.sourceLink)
+
+                .works__nav
+                    .works__dot
+                    .works__dot
+                    .works__dot
+
+
 
