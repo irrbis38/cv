@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     spaceBetween: 20,
     slidesPerView: 1,
     slidesPerGroup: 1,
+    draggable: true,
     pagination: {
       el: ".works__nav",
       type: "bullets",
