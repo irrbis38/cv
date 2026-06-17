@@ -2,17 +2,16 @@ extends base/_layout
 block vars
     - var lang = 'en'
 block head
-    title Vasil Iliukhin - Curriculum Vitae
+    title Vasily Ilyukhin - Resume
 block page
 
     section.about
         .container
-            h2.about__title.title#about About
+            h2.about__title.title#about About Me
             p.about__text.
-                I’m 40 years old. Married. I have two kids. Live in Bobruisk, Belarus.#[br]
-                Start web-development in 2020. Frontend-developer with technical education.#[br]
-                Main (commercial) stack: Pug, SCSS, JS, GSAP.#[br]
-                Non-commercial stack (educational and pet projects only): React, RTK, Module SCSS, Styled Components.
+                I am 42 years old. I live in Bobruisk, Belarus.#[br]
+                Commercial experience - since October 2020. Frontend developer with a technical background.#[br]
+                Current stack: Vue, JS, TS, SCSS.#[br]
 
 
     section.experience.block#experience
@@ -21,43 +20,84 @@ block page
 
             .block__item
                 .block__left
-                    p.block__subtitle PHPDev
-                    p.block__additional Oct 2023 - Present
-                    p.block__additional Minsk, Belarus
+                    p.block__subtitle Maxbitsolution
+                    p.block__additional November 2024 - Present
+                    p.block__additional Minsk, Belarus, Remote
 
                 .block__right
-                    p.block__name Frontend-developer
-                    p.block__about Create different websites usage Pug, SCSS, JavaScript, GSAP.
+                    p.block__name Frontend Developer
+                    p.block__about.
+                        Working in a product company:
+
+                        - maintenance and development of the project.#[br]
+                        - development of new features.#[br]
+                        - bug fixing.#[br]
+                        - conducting code reviews.#[br]
+                        - migrating logic from Vue 2 to Vue 3.#[br]
+                        - test coverage of the codebase.#[br]
+                        Stack: Vue, JS, TS, Pinia, Vue Test Utils + Jest, Gitlab
+
+
+            .block__item
+                .block__left
+                    p.block__subtitle Art6
+                    p.block__additional September 2023 - November 2024
+                    p.block__additional Krasnodar, Russia, Remote, Part-time
+
+                .block__right
+                    p.block__name Frontend Developer
+                    p.block__about.
+                        Creation of promo sites, corporate portals, e-commerce websites, email newsletter layout, integration of layouts into CMS Bitrix.#[br]
+                        Maintenance of existing projects.#[br]
+                        Stack: Pug, JS, SCSS, GSAP, Github
+
+
+            .block__item
+                .block__left
+                    p.block__subtitle PHPDev
+                    p.block__additional October 2023 - June 2024
+                    p.block__additional Minsk, Belarus, Remote, Part-time
+
+                .block__right
+                    p.block__name Frontend Developer
+                    p.block__about.
+                        Creation of various corporate portals for large international companies.#[br]
+                        Development and maintenance of existing projects.#[br]
+                        Stack: Pug, Nunjucks, JS, SCSS, GSAP, CMS Bitrix, Gitlab
+
 
             .block__item
                 .block__left
                     p.block__subtitle LiveHTML
-                    p.block__additional Oct 2022 - Sep 2023
-                    p.block__additional Minsk, Belarus
+                    p.block__additional October 2022 - September 2023
+                    p.block__additional Minsk, Belarus, Remote, Full-time
 
                 .block__right
-                    p.block__name Frontend-developer
-                    p.block__about Create different websites usage Pug, SCSS, JavaScript, GSAP.
+                    p.block__name Frontend Developer
+                    p.block__about.
+                        Creation of internet portals, corporate websites, event platforms for Russian and American companies with complex animation implementation.#[br]
+                        Stack: Pug, JS, SCSS, GSAP, Github
 
             .block__item
                 .block__left
                     p.block__subtitle CreativeSolutions
-                    p.block__additional Dec 2021 - Oct 2022
-                    p.block__additional Bobruisk, Belarus
+                    p.block__additional December 2021 - October 2022
+                    p.block__additional Minsk, Belarus, Remote, Full-time
 
                 .block__right
-                    p.block__name Frontend-developer
-                    p.block__about Created websites of varying degrees of complexity. Stack: HTML, SCSS, JS.
+                    p.block__name Frontend Developer
+                    p.block__about Creation of websites of varying complexity. Stack: Pug, JS, SCSS, Tailwind, React, Gitlab
+
 
             .block__item
                 .block__left
                     p.block__subtitle Webfocus
-                    p.block__additional Oct 2020 - Dec 2021
-                    p.block__additional Bobruisk, Belarus
+                    p.block__additional October 2020 - December 2021
+                    p.block__additional Minsk, Belarus, Remote, Full-time
 
                 .block__right
-                    p.block__name Frontend-developer
-                    p.block__about Create different sites (HTML/CSS/JS), add interactive elements, integrated the code to CMS Wordpress.
+                    p.block__name Frontend Developer
+                    p.block__about Creation of various websites, adding interactive elements, integration of ready-made layouts into CMS Wordpress.
 
     section.skills.block#skills
         .container
@@ -67,28 +107,27 @@ block page
             .block__right
                 p.block__name Technical Skills
                 ul.block__list
-                    li HTML5, Pug (Jade)
-                    li Nunjucks
+                    li HTML5, Pug
                     li CSS3, SCSS
-                    li JavaScript
+                    li JavaScript, Typescript
+                    li Vue, Pinia
+                    li Vue Test Utils + Jest
                     li GSAP
-                    li BEM
-                    li React
 
             .block__item
             .block__right
                 p.block__name English Level
                 ul.block__list
-                    li B1 Low Intermediate
+                    li B1
 
             .block__item
             .block__right
                 p.block__name Tools
                 ul.block__list
-                    li VS Code
+                    li Gitlab
                     li GitHub
+                    li VS Code
                     li Figma
-                    li Adobe Photoshop
                     li Gulp
                     li Webpack
                     li Vite
@@ -100,7 +139,7 @@ block page
             .block__item
                 .block__left
                     p.block__subtitle RS School
-                    p.block__additional March 2021 - Sept 2021
+                    p.block__additional March 2021 - September 2021
                 .block__right
                     .block__name JavaScript / Frontend
 
@@ -109,185 +148,74 @@ block page
                     p.block__subtitle BSUIR
                     p.block__additional 2004 - 2010
                 .block__right
-                    .block__name Technical Security
-
-            .block__item
-                .block__left
-                    p.block__subtitle Bobruisk State Electrotechnical College
-                    p.block__additional 2001 - 2002
-                .block__right
-                    .block__name Electrician
+                    .block__name Technical Security Provision
 
     section.works#examples
         .container
-            h2.works__title.title Work Examples ( Main / Commercial Stack)
-
-            .works__slider.swiper
-
-                .works__wrapper.swiper-wrapper
-
-                    -
-                        const worksExamples = [
-
-                            {
-                                imageUrl: "./images/kuban_bread.jpg",
-                                description: 'Developed a responsive website for a company making delicious and healthy breads.',
-                                usedTechnologies: ['Pug', 'SCSS', 'JS'],
-                                demoLink: "https://irrbis38.github.io/kuban_bread/done/index.html",
-                                sourceLink: "https://github.com/irrbis38/kuban_bread"
-                            },
-                            {
-                                imageUrl: "./images/rrbeauty.jpg",
-                                description: 'Developed a responsive website for a store selling tattoo accessories.',
-                                usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP'],
-                                demoLink: "https://irrbis38.github.io/rrbeauty/",
-                                sourceLink: "https://github.com/irrbis38/rrbeauty"
-                            },
-                            {
-                                imageUrl: "./images/bauarenda.jpg",
-                                description: 'Development of an adaptive website for a company engaged in rental of construction equipment.',
-                                usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP', 'Wordpress'],
-                                demoLink: "https://irrbis38.github.io/bau-arenda/",
-                                sourceLink: "https://github.com/irrbis38/bau-arenda"
-                            },
-                            {
-                                imageUrl: "./images/investment.jpg",
-                                description: 'Creating a website for an investment company.',
-                                usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP'],
-                                demoLink: "https://irrbis38.github.io/investment/",
-                                sourceLink: "https://github.com/irrbis38/investment"
-                            },
-                            {
-                                imageUrl: "./images/talent.jpg",
-                                description: 'Website for recruiting company.',
-                                usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP', 'jQuery'],
-                                demoLink: "https://irrbis38.github.io/unity/",
-                                sourceLink: "https://github.com/irrbis38/unity"
-                            },
-                            {
-                                imageUrl: "./images/apostol.jpg",
-                                description: 'Website for media awards.',
-                                usedTechnologies: ['Pug', 'SCSS', 'JavaScript', 'GSAP'],
-                                demoLink: "https://irrbis38.github.io/apostol-done/",
-                                sourceLink: "https://github.com/irrbis38/apostol-done"
-                            },
-                            {
-                                imageUrl: "./images/Bella.jpg",
-                                description: 'Studying project usage Greensock library.',
-                                usedTechnologies: ['HTML', 'SCSS', 'JavaScript', 'GSAP'],
-                                demoLink: "https://irrbis38.github.io/GS-bella/",
-                                sourceLink: "https://github.com/irrbis38/GS-bella"
-                            },
-                            {
-                                imageUrl: "./images/ancros.jpg",
-                                description: 'Test porject for Ancros company.',
-                                usedTechnologies: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
-                                demoLink: "https://irrbis38.github.io/ancros-test/",
-                                sourceLink: "https://github.com/irrbis38/ancros-test"
-                            },
-                            {
-                                imageUrl: "./images/buhtech.jpg",
-                                description: 'Creating an adaptive website for an accounting company, integration on Wordpress.',
-                                usedTechnologies: ['HTML', 'CSS', 'JavaScript', 'Wordpress'],
-                                demoLink: "https://irrbis38.github.io/BuhTechnologies/",
-                                sourceLink: "https://github.com/irrbis38/BuhTechnologies"
-                            },
-                            {
-                                imageUrl: "./images/chysto.jpg",
-                                description: 'Create cleaning company site, integration on CMS Wordpress.',
-                                usedTechnologies: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Wordpress'],
-                                demoLink: "https://irrbis38.github.io/https-chysto.by-/",
-                                sourceLink: "https://github.com/irrbis38/https-chysto.by-"
-                            },
-                            {
-                                imageUrl: "./images/lawtech.jpg",
-                                description: 'Adaptive website makeup for a law firm, integration on Wordpress.',
-                                usedTechnologies: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Wordpress'],
-                                demoLink: "https://irrbis38.github.io/testWebFocus/",
-                                sourceLink: "https://github.com/irrbis38/testWebFocus"
-                            },
-                        ];
-
-                    each work in worksExamples
-                        +works_item(work.imageUrl, work.description, work.usedTechnologies, work.demoLink, work.sourceLink)
-
-                .works__nav
-                    .works__dot
-                    .works__dot
-                    .works__dot
-
-                    -
-                        const reactWorksExamples = [
-
-                            {
-                                imageUrl: "./images/crwn-store-v2.jpg",
-                                description: 'Online Store',
-                                usedTechnologies: ['React', 'React-router-DOM v.6', 'Styled-components', 'Firebase'],
-                                demoLink: "https://irrbis38.github.io/crwn-store-v2/",
-                                sourceLink: "https://github.com/irrbis38/crwn-store-v2"
-                            },
-                            {
-                                imageUrl: "./images/pizza.jpg",
-                                description: 'Pizza Store',
-                                usedTechnologies: ['React', 'Redux Toolkit', 'Module SCSS'],
-                                demoLink: "https://irrbis38.github.io/pizza/",
-                                sourceLink: "https://github.com/irrbis38/pizza"
-                            },
-                            {
-                                imageUrl: "./images/lit-todolist.jpg",
-                                description: 'TodoApp',
-                                usedTechnologies: ['React', 'Module SCSS', 'Zustand'],
-                                demoLink: "https://irrbis38.github.io/lit-todolist/",
-                                sourceLink: "https://github.com/irrbis38/lit-todolist"
-                            },
-                            {
-                                imageUrl: "./images/r-music-player.jpg",
-                                description: 'Music Player',
-                                usedTechnologies: ['React'],
-                                demoLink: "https://irrbis38.github.io/r-music-player/",
-                                sourceLink: "https://github.com/irrbis38/r-music-player"
-                            },
-                            {
-                                imageUrl: "./images/react-online-store.jpg",
-                                description: 'Simple React Online Shop',
-                                usedTechnologies: ['React'],
-                                demoLink: "https://irrbis38.github.io/react-online-store",
-                                sourceLink: "https://github.com/irrbis38/react-online-store"
-                            },
-                            {
-                                imageUrl: "./images/countries.jpg",
-                                description: 'Countries Flags',
-                                usedTechnologies: ['React', 'Redux ToolKit', 'Styled-components'],
-                                demoLink: "https://irrbis38.github.io/countries/",
-                                sourceLink: "https://github.com/irrbis38/countries"
-                            },
-                            {
-                                imageUrl: "./images/react-movies.jpg",
-                                description: 'React Movies App',
-                                usedTechnologies: ['React'],
-                                demoLink: "https://irrbis38.github.io/react-movies/",
-                                sourceLink: "https://github.com/irrbis38/react-movies"
-                            }
-                        ]
+            h2.works__title.title Portfolio
 
 
+            .works__wrapper
 
-    section.works
-        .container
-            h2.works__title.title React Work Examples ( Non-Commercial Stack)
+                -
+                    const worksExamples = [
+                        {
+                            imageUrl: "./images/investment.jpg",
+                            description: 'Development of a promo site for an investment company.',
+                            usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP'],
+                            demoLink: "https://irrbis38.github.io/investment/",
+                            sourceLink: "https://github.com/irrbis38/investment"
+                        },
+                        {
+                            imageUrl: "./images/talent.jpg",
+                            description: 'Website redesign for a recruitment company.',
+                            usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP', 'jQuery'],
+                            demoLink: "https://irrbis38.github.io/unity/",
+                            sourceLink: "https://github.com/irrbis38/unity"
+                        },
+                        {
+                            imageUrl: "./images/kuban_bread.jpg",
+                            description: 'Development of a promo site for a company producing crispbreads.',
+                            usedTechnologies: ['Pug', 'SCSS', 'JS'],
+                            demoLink: "https://irrbis38.github.io/kuban_bread/done/index.html",
+                            sourceLink: "https://github.com/irrbis38/kuban_bread"
+                        },
+                        {
+                            imageUrl: "./images/rrbeauty.jpg",
+                            description: 'Development of an online store for a company selling tattoo accessories.',
+                            usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP'],
+                            demoLink: "https://irrbis38.github.io/rrbeauty/",
+                            sourceLink: "https://github.com/irrbis38/rrbeauty"
+                        },
+                        {
+                            imageUrl: "./images/variant-auto.jpg",
+                            description: 'Development of an online store for a car dealership.',
+                            usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP'],
+                            demoLink: "https://irrbis38.github.io/variant-auto/",
+                            sourceLink: "https://github.com/irrbis38/variant-auto"
+                        },
+                        {
+                            imageUrl: "./images/sft-group.jpg",
+                            description: 'Development of an internet portal for a packaging manufacturing company.',
+                            usedTechnologies: ['Nunjucks', 'SCSS', 'JS', 'GSAP'],
+                            demoLink: "https://irrbis38.github.io/sft-group/",
+                            sourceLink: "https://github.com/irrbis38/sft-group"
+                        },
+                        {
+                            imageUrl: "./images/bauarenda.jpg",
+                            description: 'Development of a catalog for a company providing construction equipment rental services.',
+                            usedTechnologies: ['Pug', 'SCSS', 'JS', 'GSAP', 'Wordpress'],
+                            demoLink: "https://irrbis38.github.io/bau-arenda/",
+                            sourceLink: "https://github.com/irrbis38/bau-arenda"
+                        },
+                        {
+                            imageUrl: "./images/apostol.jpg",
+                            description: 'Media award website.',
+                            usedTechnologies: ['Pug', 'SCSS', 'JavaScript', 'GSAP'],
+                            demoLink: "https://irrbis38.github.io/apostol-done/",
+                            sourceLink: "https://github.com/irrbis38/apostol-done"
+                        },
+                    ];
 
-            .works__slider.swiper
-
-                .works__wrapper.swiper-wrapper
-
-
-                    each work in reactWorksExamples
-                        +works_item(work.imageUrl, work.description, work.usedTechnologies, work.demoLink, work.sourceLink)
-
-                .works__nav
-                    .works__dot
-                    .works__dot
-                    .works__dot
-
-
-
+                each work in worksExamples
+                    +works_item(work.imageUrl, work.description, work.usedTechnologies, work.demoLink, work.sourceLink)
