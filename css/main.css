@@ -836,7 +836,7 @@ a:hover {
   height: 10px
 }
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: Poly,serif;
   font-weight: 400;
   font-size: 28px;
@@ -844,7 +844,7 @@ a:hover {
   color: #363636
 }
 .header {
-  padding: 35px 0;
+  padding: 25px 0 20px;
   background-color: #efefef
 }
 .header .container {
@@ -889,8 +889,7 @@ a:hover {
 .header__info {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30px
+  display: flex
 }
 .header__contacts,
 .header__skills {
@@ -1109,7 +1108,20 @@ body.lock {
   padding: 40px 0
 }
 .works__wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
   margin-bottom: 10px
+}
+@media (min-width:700px) and (max-width:999px) {
+  .works__wrapper {
+    grid-template-columns: repeat(2,1fr)
+  }
+}
+@media (max-width:575px) {
+  .works__wrapper {
+    grid-template-columns: 100%
+  }
 }
 .works__text {
   margin-bottom: 30px
@@ -1360,8 +1372,15 @@ code {
   .container {
     max-width: 540px
   }
+  .title {
+    margin-bottom: 15px;
+    font-size: 23px
+  }
   .header {
     padding-bottom: 0
+  }
+  .header__info {
+    margin-bottom: 20px
   }
   .header__image {
     display: none
@@ -1410,9 +1429,6 @@ code {
     max-width: 100%;
     padding: 0 25px
   }
-  .title {
-    margin-bottom: 20px
-  }
   .header__burger {
     top: 0
   }
@@ -1420,7 +1436,8 @@ code {
     display: block
   }
   .header__info {
-    width: 100%
+    width: 100%;
+    margin-bottom: 10px
   }
   .header__contacts {
     max-width: 240px;
