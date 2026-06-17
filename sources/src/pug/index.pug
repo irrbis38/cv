@@ -1,4 +1,6 @@
 extends base/_layout
+block vars
+    - var lang = 'en'
 block head
     title Vasil Iliukhin - Curriculum Vitae
 block page
@@ -118,7 +120,7 @@ block page
 
     section.works#examples
         .container
-            h2.works__title.title Work Examples ( Main / Commercial Stack) 
+            h2.works__title.title Work Examples ( Main / Commercial Stack)
 
             .works__slider.swiper
 
@@ -272,7 +274,7 @@ block page
 
     section.works
         .container
-            h2.works__title.title React Work Examples ( Non-Commercial Stack) 
+            h2.works__title.title React Work Examples ( Non-Commercial Stack)
 
             .works__slider.swiper
 

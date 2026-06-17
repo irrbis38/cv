@@ -58,7 +58,7 @@ a:hover {
 }
 
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: "Poly", serif;
   font-weight: 400;
   font-size: 28px;
@@ -69,7 +69,7 @@ a:hover {
 /* header styles */
 
 .header {
-  padding: 35px 0;
+  padding: 25px 0 20px;
   background-color: #efefef;
 }
 
@@ -116,7 +116,6 @@ a:hover {
 
 .header__info {
   display: flex;
-  margin-bottom: 30px;
 }
 
 .header__contacts,
@@ -366,7 +365,18 @@ body.lock {
 }
 
 .works__wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 10px;
+
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include xxs {
+    grid-template-columns: 100%;
+  }
 }
 
 .works__text {
@@ -642,8 +652,17 @@ code {
     max-width: 540px;
   }
 
+  .title {
+    margin-bottom: 15px;
+    font-size: 23px;
+  }
+
   .header {
     padding-bottom: 0;
+  }
+
+  .header__info {
+    margin-bottom: 20px;
   }
 
   .header__image {
@@ -696,10 +715,6 @@ code {
     padding: 0 25px;
   }
 
-  .title {
-    margin-bottom: 20px;
-  }
-
   .header__burger {
     top: 0;
   }
@@ -710,6 +725,7 @@ code {
 
   .header__info {
     width: 100%;
+    margin-bottom: 10px;
   }
 
   .header__contacts {
